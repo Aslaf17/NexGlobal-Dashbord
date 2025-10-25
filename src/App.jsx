@@ -6,12 +6,14 @@ import Login from "./pages/login/Login"
 import Payroll from "./pages/payroll/Payroll"
 import Reports from "./pages/reports/Reports"
 import Requirement from "./pages/requirement/Requirement"
+import Navbar from "./components/Navbar"
 
 
 function App() {
     return (
         <>
             <BrowserRouter>
+            <Navbar/>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/employees" element={<Employees />} />
